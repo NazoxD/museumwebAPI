@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Museum of Computing</title>
+    <link rel="shortcut icon" href="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png" type="image/x-icon" />
+
+</head>
+<body>
+
+<nav>   
+<ul>
+    <a><img class="logo"  href="#home" src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg" width="40px;" height="30px;"></a>
+    <li><a onclick='setHome();'>🏠 | Home</a></li>
+    <li style="float:right"><a onclick='setGuestBook();'>📖 | Guest Book</a></li>
+    <li style="float:right"><a onclick='setDisplay();'>💻 | Displays</a></li>
+    <li style="float:right"><a onclick='setNews();'>📰 | News</a></li>    
+</ul>
+
+</nav>   
+
+<div id="home">
+        <div class="parallax">
+        <div class="container">
+        <div class="content">
+                <img src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg" width="100" height="100">
+                <h1>Welcome to The Bob Doran Museum of Computing</h1>
+                <h5>You can learn more about the displays here. If you are intrigued by what you find here and live close to Auckland, 
+                    or are visiting the city, please feel free to drop in to the school and see the displays for yourself. 
+                    We are located at the University on Princes Street and are always open during normal office hours and also in the 
+                    evenings and on the weekends when classes are in session.</h5>
+                <hr>
+        </div>
+        </div>
+        </div>
+</div>
+
+
+<div id="news">
+<div class="header">
+    <h1>News</h1>
+    <hr class="headerHr">
+    <div id="newsItems"></div>
+</div>
+</div>
+
+<div id="display">
+    <div class="header">
+        <h1>Displays</h1>
+        <hr class="headerHr">
+        <input type="text" class="searchBar" name="search" id="searchInput" oninput="displaySearch()" placeholder ="Search..">
+        <br>
+        <div id="displayItems"></div>
+    </div>
+</div>
+
+<div id="guestbook">
+    <div class="header">
+        <h1>Guest Book</h1>
+        <hr class="headerHr">
+    <div class="commentSection">
+        <p>Post your comment to the guest book</p>
+        <textarea style="width:90%;" id="myComment" rows="4" cols="50" name="comment" placeholder="Enter text here ..."></textarea>
+        <br>
+         Name: <input type="text" name="usrname" id="myName">  <button onclick="postComment()">Post Comment</button>
+    </div>
+        <h2 class="recentComments">Recent Comments</h2>
+        <iframe class= "iframe" id="iframeID" style="width:82%"; src="http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments"></iframe>
+    </div>
+</div>
+
+
+
+</body>
+</html>
