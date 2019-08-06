@@ -7,5 +7,5 @@ This is a project that focuses on the aspects of:
 2) An understanding of HTML, CSS and JavaScript
 3) Being able to use Web APIs and consume data
 
-This project focuses mainly on the implementation of JavaScript, connecting Web APIs to a website. 
+This project focuses mainly on the implementation of JavaScript, connecting Web APIs to a website and without the use of any libraries or frameworks.
 
